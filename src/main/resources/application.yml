@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/datajpa
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+      #show_sql: true  # 콘솔로 찍힘 -> 아래 logging을 사용하면 로그 파일로 남김
+      #format_sql: true  # 쿼리가 포맷팅이 되서 예쁘게 나옴 <- 작동 안해서 application.properties 파일 생성하여 옮겨줌 -> 성공
+
+logging.level:
+  org.hibernate.SQL: debug
+  # org.hibernate.type: trace # 쿼리에 파라미터 까지 볼 수있는 옵션
