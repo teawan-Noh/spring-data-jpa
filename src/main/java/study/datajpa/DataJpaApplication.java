@@ -16,8 +16,8 @@ public class DataJpaApplication {
 	}
 
 	// auditing 생성자, 수정자
-	@Bean
-	public AuditorAware<String> auditorProvider() {
-		return () -> Optional.of(UUID.randomUUID().toString());
-	}
+//	@Bean
+//	public AuditorAware<String> auditorProvider() {
+//		return () -> Optional.of(UUID.randomUUID().toString());
+//	}
 }

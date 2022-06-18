@@ -21,10 +21,11 @@ public abstract class BaseEntity {
     @LastModifiedDate
     private LocalDateTime lastModifiedDate;
 
-    @CreatedBy
-    @Column(updatable = false)
-    private String createdBy;
-
-    @LastModifiedBy
-    private String lastModifiedBy;
+    // 생성자, 수정자 분리해서 사용
+//    @CreatedBy
+//    @Column(updatable = false)
+//    private String createdBy;
+//
+//    @LastModifiedBy
+//    private String lastModifiedBy;
 }
