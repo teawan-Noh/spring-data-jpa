@@ -1,4 +1,4 @@
-package jpabook.jpashop.domain;
+package study.datajpa.entity;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
